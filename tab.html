@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Изображения</title>
+  </head>
+  <body>
+    <header>
+      <!-- создание таблицы -->
+      <table>
+        <!-- tr - строка, td - ячеика, th - подпись строк и столбцов -->
+        <tr>
+          <th></th>
+          <th scope="col">значение1</th>
+          <th scope="col">значение2</th>
+          <th scope="col">сумма</th>
+        </tr>
+        <tr>
+          <th scope="row">Первое выражение</th>
+          <td>15</td>
+          <td>15</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <th scope="row">Второе выражение</th>
+          <td>30</td>
+          <td>30</td>
+          <td>60</td>
+        </tr>
+      </table>
+
+      <br />
+
+
+      <!-- colspan обьединение колонок rowspan обьединение строк-->
+      <table>
+        <tr>
+          <th></th>
+          <th scope="col">11:00</th>
+          <th scope="col">12:00</th>
+          <th scope="col">13:00</th>
+          <th scope="col">14:00</th>
+          <th scope="col">15:00</th>
+        </tr>
+        <tr>
+          <th scope="row">Понедельник</th>
+          <td>HTML</td>
+          <td colspan="2">JS</td>
+          <td>CSS</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <th scope="row">Вторник</th>
+          <td colspan="3">JS</td>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table>
+        <tr>
+          <th></th>
+          <th scope="col">11:00</th>
+          <th scope="col">12:00</th>
+          <th scope="col">13:00</th>
+          <th scope="col">14:00</th>
+          <th scope="col">15:00</th>
+        </tr>
+        <tr>
+          <th scope="row">Понедельник</th>
+          <td rowspan="2">JS</td>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <th scope="row">Вторник</th>
+          <td>CSS</td>
+          <td>HTML</td>
+        </tr>
+      </table>
+    </header>
+  </body>
+</html>
