@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Изображения</title>
+  </head>
+  <body>
+    <header>
+      <!-- расмотрим структуру формы
+      <form> - все элементы формы помещаются в тег </form>
+      action="" - адрес получателя формы
+      method - метод отправки формы
+       get - данные будут добавлены в конец url адреса
+        для коротких форм
+        при простом получении данных с сервера, без отправки сведений в БД
+       post - отправка данных методом html заголовков
+        позволяет загружать файлы
+        очень длинная форма
+        конфидециальные данные (пароли)
+        добавляет сведения в БД и удаляет их оттуда
+      если не указывать метод, то по умолчанию будет использован get
+      id-->
+      <!--
+      <input> - используется для создания формы
+      type="" - присваевает тип обозначения
+            text
+            password
+
+      name="" - идентификация формы при отправке
+      maxlenght - допустимое количество символов в форме
+      size -  устаревший параметр, отвечает за размер формы
+      -->
+      <form action="login.html">
+        <p>Имя пользователя:
+          <input type="text" name="username" size="15" maxlenght="32" />
+        </p>
+        <p>Пароль:
+          <input type="password" name="password" size="15" maxlenght="32" />
+        </p>
+      </form>
+      <br />
+      <hr />
+      <br />
+      <form action="comments.html">
+        <p>Оцените данный урок</p>
+        <textarea name="comments" cols="20" rows="4">текст...</textarea>
+        <!-- <textarea> </textarea> область ввода текста-->
+      </form>
+      <br />
+      <hr />
+      <br />
+      <!--
+      type="radio" - создаёт переключатель
+      name - отправляет серверу категорию данных
+      value - соддержимон данных для отправки
+      checked - выбор по умолчанию
+      -->
+      <form action="select.html">
+        <p> Выберете ваш любимый жанр музыки:
+          <br />
+          <input type="radio" name="ganre" value="rock" checked="checked" /> Рок
+          <input type="radio" name="ganre" value="electro" /> Электро
+          <input type="radio" name="ganre" value="rap" /> Рэп
+        </p>
+      </form>
+      <br />
+      <hr />
+      <br />
+      <!-- тоже самое, но с чекбоксами -->
+      <form action="select.html">
+        <p> Выберете ваш любимый жанр музыки:
+          <br />
+          <input type="checkbox" name="ganre" value="rock" checked="checked" /> Рок
+          <input type="checkbox" name="ganre" value="electro" /> Электро
+          <input type="checkbox" name="ganre" value="rap" /> Рэп
+        </p>
+      </form>
+      <br />
+      <hr />
+      <br />
+      <form action="select.html">
+        <p> Выберете ваш любимый жанр музыки:
+        <select name="gadget">
+          <option value="rock" /> Рок
+          <option value="electro" /> Электро
+          <option value="rap" /> Рэп
+        </select>
+        </p>
+      </form>
+    </header>
+  </body>
+</html>
