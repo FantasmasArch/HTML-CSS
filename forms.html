@@ -78,6 +78,8 @@
       <br />
       <hr />
       <br />
+      <!-- выпадающий список, если добавить атрибут multiple="multiple",
+      то при нажатии ctrl можно будет выбрать несколько вариантов -->
       <form action="select.html">
         <p> Выберете ваш любимый жанр музыки:
         <select name="gadget">
@@ -87,6 +89,22 @@
         </select>
         </p>
       </form>
+      <br />
+      <hr />
+      <br />
+      <!-- type="file" - загрузка файла type="submit" - кнопка потверждения
+      type="image" - замена submit на своё изображение кнопки, теже атрибуты,
+      что и у <img>-->
+      <form action="file.html">
+        <p>Загрузите ваш файл:</p>
+          <input type="file" name="file" /><br />
+          <input type="submit" value="загрузить" />
+      </form>
+      <br />
+      <hr />
+      <br />
+      <!-- <button> </button> - создаёт кнопку -->
+      <!--<input type="hidden" - скрытй элемент, видно только при просмотре кода-->
     </header>
   </body>
 </html>
